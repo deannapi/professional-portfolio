@@ -1,0 +1,142 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 125px repeat(7, 1fr) ;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;
+    justify-content: center;
+    font-family: cursive;
+    grid-gap: 10px;
+}
+
+.grid1 {
+    grid-area: 1 / 2 / span 2 / span 2;
+    border: #a1793a solid 3px;
+    background: #ddd1ff;
+}
+
+.grid2 {
+    grid-area: 1 / 5 / span 2 / span 2;
+    border: #a1793a solid 3px;
+    background: #ddd1ff;
+}
+
+.grid-self {
+    grid-area: 3 / 4 / span 2 / span 1;
+    text-align: center;
+    align-self: center;
+}
+
+.grid3 {
+     grid-area: 5 / 2 / span 2 / span 2;
+     border: #a1793a solid 3px;
+     background: #ddd1ff;
+}
+
+.grid4 {
+    grid-area: 3 / 1 / span 2 /span 2;
+    border: #a1793a solid 3px;
+    background: #ddd1ff;
+}
+
+.grid5 {
+    grid-area: 3 / 7 / span 2 / span 2;
+    border: #a1793a solid 3px;
+    background: #ddd1ff;
+}
+
+.grid6 {
+    grid-area: 5 / 5 / span 2 / span 2;
+    border: #a1793a solid 3px;
+    background: #ddd1ff;
+}
+
+h3 {
+    font-variant: small-caps;
+    font-family: "papyrus";
+    font-size: 22px;
+    text-align: center;
+    margin: 0 0 3px 0;
+    background-color: #0c486e;
+    color: white;
+}
+
+h3::first-letter {
+    font-size: 30px;
+    color: #b69dfc;
+}
+
+img {
+    border-radius: 40px;
+    border: #a1793a solid 3px;
+    height: 80%;
+    width: 100%;
+}
+
+ol li {
+    list-style: none;
+}
+
+ol li a {
+    color: #0c486e;
+}
+
+ol li a:hover {
+    color: #a1793a;
+}
+
+.contact-grid {
+    grid-area: 7 / 1 / span 1 / span 7;
+    display: grid;
+    font-family: "papyrus";
+    text-align: center;
+}
+
+.contact-grid h4 {
+    font-size: 22px;
+    background: #a1793a;
+    color: black;
+    margin: 0;
+}
+
+.instagram .fab {
+    font-size: 40px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+}
+
+.github .fab {
+    color: black;
+    font-size: 40px;
+}
+
+.linkedin .fab {
+    color: #0e76a8;
+    font-size: 40px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-grid;
+    letter-spacing: 20px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+}
