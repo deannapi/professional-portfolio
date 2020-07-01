@@ -3,7 +3,7 @@
     grid-template-columns: repeat(8, 125px) ;
     grid-template-rows: repeat(7, 150px);
     justify-content: center;
-    font-family: "Comic Sans MS";
+    font-family: "Copperplate Gothic Light";
     grid-gap: 10px;
 }
 
@@ -47,6 +47,16 @@
     grid-area: 5 / 5 / span 2 / span 2;
     border: #a1793a solid 3px;
     background: #ddd1ff;
+}
+
+h1 {
+    font-variant: small-caps;
+    font-family: "papyrus";
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    background-color: #0c486e;
+    color: white;
 }
 
 h3 {
