@@ -1,9 +1,9 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 125px repeat(7, 1fr) ;
-    grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;
+    grid-template-columns: repeat(8, 125px) ;
+    grid-template-rows: repeat(7, 150px);
     justify-content: center;
-    font-family: cursive;
+    font-family: "Comic Sans MS";
     grid-gap: 10px;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .grid5 {
-    grid-area: 3 / 7 / span 2 / span 2;
+    grid-area: 3 / 6 / span 2 / span 2;
     border: #a1793a solid 3px;
     background: #ddd1ff;
 }
@@ -73,6 +73,7 @@ img {
 
 ol li {
     list-style: none;
+    text-align: left;
 }
 
 ol li a {
@@ -128,21 +129,55 @@ footer {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-    
+@media screen and (max-width: 576px) { 
+    .grid-container {
+        grid-template-rows: repeat(6, 100px);
+    }
+    .grid-self {
+        grid-area: 1 / 1 / span 2 /span 1;
+    }
+    .grid1{
+        grid-area: 3/1/span 2 /span 1;
+    }
+    .grid2 {
+        grid-area: 5 /1/span 2/span 1;
+    }
+  
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-    
+/*MEDIA QUERY FOR SMALL DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-    
+/*MEDIA QUERY FOR TABLETS AND SMALLER */
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 80px;
+    }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-    
+/*MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media only screen and (max-width: 575px) {
+    ol li {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: left;
+    }
+    body {
+        width: 300px;
+        margin: 10px;
+        display: contents;
+    }
+    .grid-container {
+        grid-template-columns: 350px;
+        display: contents;
+    }
+    .grid1, .grid2, .grid3, .grid4, .grid5, .grid6, .grid-self {
+        grid-area: auto;
+        margin: 7px;
+    }
+    .img {
+        height: 250px;
+        width: 160px;
+    }
 }
